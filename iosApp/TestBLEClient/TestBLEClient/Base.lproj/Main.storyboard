@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestBLEClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bJ-Jb-lyb">
+                                <rect key="frame" x="119.66666666666669" y="150" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bqB-CV-gPh"/>
+                                    <constraint firstAttribute="width" constant="175" id="qam-iZ-JUL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="juu-2b-xE1">
+                                <rect key="frame" x="18" y="210" width="378" height="61"/>
+                                <color key="backgroundColor" red="0.77585944760000003" green="0.7843137255" blue="0.60653729580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="ayj-Kr-eTO"/>
+                                    <constraint firstAttribute="height" constant="60" id="kwC-Ex-JO5"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="CountSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="J3d-80-wXM"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKL-Sb-gDI">
+                                <rect key="frame" x="20" y="292" width="130" height="60"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="J4l-yB-wwK"/>
+                                    <constraint firstAttribute="width" constant="130" id="R1W-xU-Zwh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Write">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Send2ESP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NBX-5x-be2"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoiOpen" translatesAutoresizingMaskIntoConstraints="NO" id="eY5-HN-tpl">
+                                <rect key="frame" x="117" y="29" width="180" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="8ge-Sr-Iwk"/>
+                                    <constraint firstAttribute="width" constant="180" id="k4r-rG-sUv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9E-Xy-H1O">
+                                <rect key="frame" x="264" y="292" width="130" height="60"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8oe-Jc-SCY"/>
+                                    <constraint firstAttribute="width" constant="130" id="dcV-f4-uYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Read">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ReadESP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYE-Jh-iNW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lqf-0m-4dF">
+                                <rect key="frame" x="20" y="371" width="374" height="212"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="LaB-xi-yDF"/>
+                                    <constraint firstAttribute="width" constant="374" id="t4k-hI-dge"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P9E-Xy-H1O" firstAttribute="top" secondItem="juu-2b-xE1" secondAttribute="bottom" constant="22" id="0Po-au-gzP"/>
+                            <constraint firstItem="5bJ-Jb-lyb" firstAttribute="top" secondItem="eY5-HN-tpl" secondAttribute="bottom" constant="25" id="0fE-ec-BxO"/>
+                            <constraint firstItem="eY5-HN-tpl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="4qp-mK-P9s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eY5-HN-tpl" secondAttribute="trailing" constant="117" id="CC1-Xc-dZu"/>
+                            <constraint firstItem="juu-2b-xE1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SF0-8B-hvd"/>
+                            <constraint firstItem="tKL-Sb-gDI" firstAttribute="top" secondItem="juu-2b-xE1" secondAttribute="bottom" constant="22" id="UyX-jl-knz"/>
+                            <constraint firstItem="lqf-0m-4dF" firstAttribute="top" secondItem="tKL-Sb-gDI" secondAttribute="bottom" constant="19" id="Vh6-3v-Fl5"/>
+                            <constraint firstItem="juu-2b-xE1" firstAttribute="top" secondItem="5bJ-Jb-lyb" secondAttribute="bottom" constant="30" id="b6H-d1-42R"/>
+                            <constraint firstItem="tKL-Sb-gDI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cM1-KX-fBV"/>
+                            <constraint firstItem="eY5-HN-tpl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="hMJ-0j-1yv"/>
+                            <constraint firstItem="5bJ-Jb-lyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119.67" id="oTm-if-UZS"/>
+                            <constraint firstItem="lqf-0m-4dF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tV4-Cy-leu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P9E-Xy-H1O" secondAttribute="trailing" constant="20" id="vPc-uH-Wny"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5bJ-Jb-lyb" secondAttribute="trailing" constant="119.33" id="xc2-Re-FGd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="CSlider" destination="juu-2b-xE1" id="EwX-Ju-EV5"/>
+                        <outlet property="CountLabel" destination="5bJ-Jb-lyb" id="hKv-3w-puj"/>
+                        <outlet property="TextViewESP32" destination="lqf-0m-4dF" id="W2w-5n-AV1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="62.771739130434788"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NoiOpen" width="278" height="114"/>
+    </resources>
+</document>
