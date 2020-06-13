@@ -12,7 +12,9 @@ I developed also an ios app with xcode 11 in swift language on my Mac and upload
 ---
 
 
-[![solarized dualmode](https://github.com/gadaxmagicgadax/ESP32BLEserver-IOSApp/blob/master/images/TestBleClient.PNG)](#features)
+[![TestBleClient iOS App](https://github.com/gadaxmagicgadax/ESP32BLEserver-IOSApp/blob/master/images/TestBleClient.png)](#iOSApp)
+
+
 
 Solarized is a sixteen color palette (eight monotones, eight accent colors)
 designed for use with terminal and gui applications. It has several [unique
