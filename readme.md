@@ -21,7 +21,7 @@ I used different tutorials to get more knowledge around this kind of implementat
 
 I developed also an ios app with xcode 11 in swift language on my Mac and upload on my iphone. The code is in iosApp folder.
 
-<table>
+<table style="width: 100%">
     <colgroup>
        <col span="1" style="width: 35%;">
        <col span="1" style="width: 65%;">
