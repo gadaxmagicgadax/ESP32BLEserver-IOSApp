@@ -2,7 +2,7 @@ Abstract
 
 This is an example of creating a BLE Server on ESP32 and an ios app to communicate in read and write with the server.
 
-ESP32BLE_Server.ino is the c++ code taken from the examples present in Arduino IDE for ESP32 with BLE libraries. Logic it's quite simple. A Service and a Characteristic are defined and started advertising its presence. onRead and onWrite methods are defined in the MyCharacteristicCallbackHandler to act on read and write incoming requests. The logic in the loop() is for multi client connect.Quite tricky was to deal with the values coming in as Uint8 but containing the value in hex.
+ESP32BLE_ServerMulti.ino is the c++ code taken from the examples present in Arduino IDE for ESP32 with BLE libraries. Logic it's quite simple. A Service and a Characteristic are defined and started advertising its presence. onRead and onWrite methods are defined in the MyCharacteristicCallbackHandler to act on read and write incoming requests. The logic in the loop() is for multi client connect.Quite tricky was to deal with the values coming in as Uint8 but containing the value in hex.
 
 When you start the sketch in ESP32 it is immediately available to any client to connect. I tried with nRF Connect and was able to connect, to read and write values in the characteristic.
 
