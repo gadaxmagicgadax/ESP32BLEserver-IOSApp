@@ -24,6 +24,7 @@ I developed also an ios app with xcode 11 in swift language on my Mac and upload
 <p>The app uses the swift CoreBluetooth library. <a href="https://developer.apple.com/documentation/corebluetooth">Here</a> you can find the documentation and some tutorials. Other interestng tutorials I used are here:
     <ul>
     <li>https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor#toc-anchor-013</li>
+        <li>https://www.novelbits.io/intro-ble-mobile-development-ios/</li>
     </ul>
 </td>
 </table>
