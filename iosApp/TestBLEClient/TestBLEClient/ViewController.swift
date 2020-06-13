@@ -30,6 +30,8 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     @IBAction func ReadESP(_ sender: Any) {
         let valueRead = readCountToChar(withCharacteristic: countChar!)
         print("ReadESP valueRead = \(valueRead)")
+  
+        
     }
     
     @IBOutlet weak var CountLabel: UILabel!
@@ -40,7 +42,6 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         
         CountLabel.text = String(Int(sender.value))
         let slider:UInt8 = UInt8(Int(sender.value))
-        print("slider value = ", slider)
     }
     @IBOutlet weak var TextViewESP32: UITextView!
     
@@ -127,6 +128,9 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
                     if characteristic.properties.contains(.read)  {
                         TextViewESP32.text += " - READ"
                     }
+                    if characteristic.properties.contains(.indicate)  {
+                        TextViewESP32.text += " - INDICATE"
+                    }
                     CSlider.isEnabled = true
                    
                 }
@@ -171,6 +175,7 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
             guard let csv = characteristic.value else { return -1}
             let bA = [UInt8](csv)
             print("reading the characteristic value : ",bA[0])
+            CountLabel.text = String(Int(bA[0]))
             
         }
         if characteristic.value == nil {
