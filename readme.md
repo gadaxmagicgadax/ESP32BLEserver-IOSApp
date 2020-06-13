@@ -19,8 +19,9 @@ I developed also an ios app with xcode 11 in swift language on my Mac and upload
 
 <img src="/images/TestBleClient.png" style="height:80%;">
 
-<p>The App is quite simple. Move the slider to select a value from 1 to 100 and then tap Write. Use nRF Connect on another device (iPad or other smartphone) to check the new value is now in the characteristic value. Tap the Read button and the value of the characteristic will show up over the slider.
+<p>The App is quite simple. The text box at the bottom shows the characteristic advertised by the ESP32. If you don't see that text that means ESP32 is not working properly. Move the slider to select a value from 1 to 100 and then tap Write. Use nRF Connect on another device (iPad or other smartphone) to check the new value is now in the characteristic value. Tap the Read button and the value of the characteristic will show up over the slider.
 <p>I know ! The layout of the app is a disaster ! Please consider this is my first app development and I have to admit xcode 11 constraints on app layout are really a nightmare !
+    With xcode 11 you can connect the iphone to the Mac and see also the debug log. I've left some prints to check everything goes fine.
 <p>The app uses the swift CoreBluetooth library. <a href="https://developer.apple.com/documentation/corebluetooth">Here</a> you can find the documentation and some tutorials. Other interestng tutorials I used are here:
     <ul>
     <li>https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor#toc-anchor-013</li>
