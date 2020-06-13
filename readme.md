@@ -8,9 +8,6 @@ When you start the sketch in ESP32 it is immediately available to any client to 
 
 <img src="/images/nRF-Connect.png" height="400" width="600">
 ---
-
-
-
 I used different tutorials to get more knowledge around this kind of implementation on ESP32 Arduino IDE. Here is a list:
 <ul>
     <li>https://github.com/nkolban/ESP32_BLE_Arduino</li>
@@ -18,10 +15,10 @@ I used different tutorials to get more knowledge around this kind of implementat
 <li>https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/</li>
 </ul>
 ---
-
 I developed also an ios app with xcode 11 in swift language on my Mac and upload on my iphone. The code is in iosApp folder.
 
-    <img src="/images/TestBleClient.png">
+<img src="/images/TestBleClient.png">
+
 <p>The App is quite simple. Move the slider to select a value from 1 to 100 and then tap Write. Use nRF Connect on another device (iPad or other smartphone) to check the new value is now in the characteristic value. Tap the Read button and the value of the characteristic will show up over the slider.
 <p>I know ! The layout of the app is a disaster ! Please consider this is my first app development and I have to admit xcode 11 constraints on app layout are really a nightmare !
 <p>The app uses the swift CoreBluetooth library. <a href="https://developer.apple.com/documentation/corebluetooth">Here</a> you can find the documentation and some tutorials. Other interestng tutorials I used are here:
