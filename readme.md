@@ -6,7 +6,7 @@ ESP32BLE_Server.ino is the c++ code taken from the examples present in Arduino I
 
 When you start the sketch in ESP32 it is immediately available to any client to connect. I tried with nRF Connect and was able to connect, to read and write values in the characteristic.
 
-<img src="/images/nRF-Connect.png" style="width:64px;height:64px;">
+<img src="/images/nRF-Connect.png" height="300" width="900">
 ---
 
 
