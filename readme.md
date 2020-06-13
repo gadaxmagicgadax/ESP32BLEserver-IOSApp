@@ -19,7 +19,7 @@ I developed also an ios app with xcode 11 in swift language on my Mac and upload
 <table>
     <tr>
 <td>
-<img src="/images/TestBleClient.png" alt="TestBleClient app" width="200" height="400">
+<img src="/images/TestBleClient.png" alt="TestBleClient app" width="600" height="400">
 </td>
 <td><p>The App is quite simple. Move the slider to select a value from 1 to 100 and then tap Write. Use nRF Connect on another device (iPad or other smartphone) to check the new value is now in the characteristic value. I know ! The layout of the app is a disaster ! Please consider this is my first app development and I have to admit xcode 11 constraints on app layout are really a nightmare !
 <p>The app uses the swift CoreBluetooth library. <a href="https://developer.apple.com/documentation/corebluetooth">Here</a> you can find the documentation and some tutorials. Other interestng tutorials I used are here:
